@@ -1,0 +1,96 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: #fff;
+}
+
+.entry {
+  background-color: #444;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: .25rem;
+}
+
+#gaestebuchTitle > a {
+  text-decoration: none;
+  color: inherit!important;
+}
+
+.container {
+  flex: 1 0 auto;
+  max-width: 600px;
+  padding: .7rem;
+}
+
+.container > form > * {
+  display: block;  
+}
+
+input, textarea {
+  background-color: #ddd;
+  width: 75%;
+  border: none;
+  padding: .6rem;
+  border-radius: .4rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.info {
+  margin: 1rem 0;
+}
+
+.button {
+  width: 200px;
+  background-color: #090;
+  color: #fff;
+  cursor: pointer;
+}
+
+a.button {
+  text-align:center;
+  margin-top: 1rem;
+  border: none;
+  padding: .6rem;
+  border-radius: .4rem;
+  text-decoration: none;
+  display: block;
+}
+
+.eintragInfo {
+  font-size: .7rem;
+  text-align: right;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  background-color: #444; 
+  margin-top: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+}
+
+.copyright {
+  display: block;
+  padding: 1rem 0 0 .7rem;
+}
