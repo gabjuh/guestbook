@@ -32,7 +32,7 @@ $eintraege = getData(DATA_FILE_NAME, true);
 <?php elseif ($eintraege === null): ?>
   <p><?= FILE_NOT_EXISTS ?></p>
 <?php else: ?>
-  <p><?= EMPTY_BOOK ?></p>
+  <p><?= EMPTY_FILE ?></p>
 <?php endif; ?>
 
 <a class="button" href="eintrag_formular_anzeigen.php"><?= WRITE_ENTRY ?></a>
