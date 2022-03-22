@@ -16,7 +16,7 @@ $eintraege = getData(DATA_FILE_NAME, true);
       <p>
         <?= nl2br($eintrag['content']) ?>
       </p>
-      <p class="eintragInfo"><?= TEXT_WROTE_BY ?> 
+      <p class="eintragInfo"><?= WROTE_BY ?> 
         <?= joinHomepageToNameIfExists(
           $eintrag['name'], 
           $eintrag['homepage']
@@ -30,12 +30,12 @@ $eintraege = getData(DATA_FILE_NAME, true);
     </div>
   <?php endforeach; ?>
 <?php elseif ($eintraege === null): ?>
-  <p><?= TEXT_FILE_NOT_EXISTS ?></p>
+  <p><?= FILE_NOT_EXISTS ?></p>
 <?php else: ?>
-  <p><?= TEXT_EMPTY_BOOK ?></p>
+  <p><?= EMPTY_BOOK ?></p>
 <?php endif; ?>
 
-<a class="button" href="eintrag_formular_anzeigen.php"><?= TEXT_WRITE_ENTRY ?></a>
+<a class="button" href="eintrag_formular_anzeigen.php"><?= WRITE_ENTRY ?></a>
 
 <?php 
 

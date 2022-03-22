@@ -5,7 +5,7 @@ header('refresh:' . SECONDS_BEFORE_REFRESH .' url=index.php');
 
 ?>
 
-<h2><?= TEXT_THANKS_FOR ?></h2>
+<h2><?= THANKS_FOR ?></h2>
 <p><?= TEXT_BEFORE_REFRESH ?></p>
 
 <?php 
