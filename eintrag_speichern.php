@@ -5,7 +5,7 @@ require 'functions.php';
 
 $eintraege = [
   'title' => cleanString($_POST['title']),
-  'text' => cleanString($_POST['text']),
+  'content' => cleanString($_POST['content']),
   'name' => cleanString($_POST['name']),
   'email' => cleanString($_POST['email']),
   'homepage' => cleanString($_POST['homepage']),

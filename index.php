@@ -7,19 +7,19 @@ $eintraege = getData(DATA_FILE_NAME, true);
 
 ?>
 
-<?php if ($eintraege !== false): ?>
+<?php if (is_array($eintraege) && count($eintraege) != 0): ?>
   <?php foreach ($eintraege as $eintrag): ?>
     <div class="entry">
       <h2>
         <?= $eintrag['title'] ?>
       </h2>
       <p>
-        <?= nl2br($eintrag['text']) ?>
+        <?= nl2br($eintrag['content']) ?>
       </p>
       <p class="eintragInfo"><?= TEXT_WROTE_BY ?> 
         <?= joinHomepageToNameIfExists(
-            $eintrag['name'], 
-            $eintrag['homepage']
+          $eintrag['name'], 
+          $eintrag['homepage']
         ) ?>
         – 
         <?= strftime(
@@ -29,6 +29,8 @@ $eintraege = getData(DATA_FILE_NAME, true);
       </p>
     </div>
   <?php endforeach; ?>
+<?php elseif ($eintraege === null): ?>
+  <p><?= TEXT_FILE_NOT_EXISTS ?></p>
 <?php else: ?>
   <p><?= TEXT_EMPTY_BOOK ?></p>
 <?php endif; ?>

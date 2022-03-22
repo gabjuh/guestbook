@@ -1,9 +1,13 @@
 <?php 
 
+function readFileIfExists($file) {
+  return !file_exists($file) ? null : unserialize(file_get_contents(($file)));
+}
+
 // Read data from file, and return it only, if it is an array, set reverse.
 function getData($file, $reverse = false) {
-  $data = unserialize(file_get_contents($file));
-  return $reverse && is_array($data) ? array_reverse($data) : $data;
+  $data = readFileIfExists($file);
+  return !($reverse && is_array($data)) ? $data : $data = array_reverse($data);
 }
 
 // Save new entry with the previous data.

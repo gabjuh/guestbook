@@ -10,10 +10,11 @@ const SECONDS_BEFORE_REFRESH = 3;
 const TITLE = 'Gästebuch';
 
 // Index page
-const TEXT_EMPTY_BOOK = 'Noch keinen Eintrag wurde geschrieben.';
 const TEXT_WRITE_ENTRY = 'Eintrag schreiben';
 const TEXT_WROTE_BY = 'Verfasst von ';
 const TEXT_THANKS_FOR = 'Danke für den Eintrag!';
+const TEXT_EMPTY_BOOK = 'Noch keinen Eintrag wurde gespeichert.';
+const TEXT_FILE_NOT_EXISTS = 'File existiert nicht.';
 const TEXT_BEFORE_REFRESH = "In " . SECONDS_BEFORE_REFRESH 
   . " Sekunden bist Du auf der Startseite weitergeleitet.";
 
