@@ -13,8 +13,8 @@ const TITLE = 'Gästebuch';
 const WRITE_ENTRY = 'Eintrag schreiben';
 const WROTE_BY = 'Verfasst von ';
 const THANKS_FOR = 'Danke für den Eintrag!';
-const EMPTY_BOOK = 'Noch keinen Eintrag wurde gespeichert.';
-const FILE_NOT_EXISTS = 'File existiert nicht.';
+const EMPTY_BOOK = 'Kein Eintrag wurde noch gespeichert.';
+const FILE_NOT_EXISTS = 'Datei existiert noch nicht.';
 const TEXT_BEFORE_REFRESH = "In " . SECONDS_BEFORE_REFRESH 
   . " Sekunden bist Du auf der Startseite weitergeleitet.";
 
